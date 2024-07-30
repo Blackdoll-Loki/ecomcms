@@ -1,9 +1,9 @@
 import { User } from "@prisma/client";
 import { Authenticator } from "remix-auth";
-import { sessionStorage } from "~/./.server/utils/session.util";
+import { sessionStorage } from "~/.server/admin/utils/session.util";
 import { FormStrategy } from "remix-auth-form";
-import { comparePassword, hashPassword } from "../utils/auth.util";
-import { prisma } from "../utils/prisma.util";
+import { comparePassword, hashPassword } from "../../shared/utils/auth.util";
+import { prisma } from "../../shared/utils/prisma.util";
 import invariant from "tiny-invariant";
 
 export const ADMIN_AUTH_STRATEGY = 'admin-pass'

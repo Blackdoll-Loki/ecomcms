@@ -12,8 +12,8 @@ export const environment = {
   },
   users: {
     admin: {
-      email: env.DEFAULT_ADMIN_EMAIL,
-      password: env.DEFAULT_ADMIN_PASSWORD
+      email: String(env.DEFAULT_ADMIN_EMAIL),
+      password: String(env.DEFAULT_ADMIN_PASSWORD)
     }
   }
 }
